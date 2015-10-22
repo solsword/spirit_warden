@@ -1,0 +1,40 @@
+body {
+  background-color: #dddddd;
+  color: #444444;
+  max-width: 1200px;
+  padding: 0px;
+  margin: auto;
+  height: 100%;
+}
+
+.head {
+  max-width: 1200px;
+  margin: 0px;
+  padding: 0px;
+  height: 1in;
+  font-size: 26pt;
+}
+
+.stats {
+  border: 1px solid black;
+  margin: 4px;
+  padding: 4px;
+  font-size: 14pt;
+}
+
+.column {
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  max-width: 600px;
+  position: absolute;
+  top: 1in;
+}
+
+.left {
+  right: 50%;
+}
+
+.right {
+  left: 50%;
+}

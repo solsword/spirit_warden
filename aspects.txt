@@ -1,0 +1,75 @@
+Natural Aspects
+===============
+Warmth
+Cold
+Fire
+Water
+Wind
+Soil
+Rock
+Gem
+Sun
+Moon
+Shadow
+Lightning
+Dessication
+Poison
+Disease
+Plant
+Fungus
+Insect
+Fish
+Amphibian
+Reptile
+Bird
+Mammal
+
+Ideal Aspects
+=============
+Peace
+War
+Chaos
+Justice
+Cruelty
+Kindness
+Deceit
+Honesty
+Hubris
+Humility
+Betrayal
+Vengeance
+Honor
+Greed
+Generosity
+Gluttony
+Moderation
+Jealousy
+Satisfaction
+Suffering
+Joy
+Wrath
+Equanimity
+Sloth
+Diligence
+
+Imaginary Aspects
+=================
+Illusion
+Horror
+Wonder
+Knowledge
+Mystery
+Prophecy
+Alchemy
+Numerology
+The Impossible
+Invention
+The Psychic
+
+Mortal Aspects
+==============
+The Corpse
+Vampirism
+The Arbiter
+The Reaper
+The Lost Soul

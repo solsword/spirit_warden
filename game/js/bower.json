@@ -1,0 +1,29 @@
+{
+  "name": "spirit_warden",
+  "authors": [
+    "Peter Mawhorter <pmawhorter@gmail.com>"
+  ],
+  "description": "Spirit Warden core game engine.",
+  "main": "spirit_warden.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "game-engine",
+    "game"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "requirejs": "~2.1.20",
+    "text": "requirejs-text#~2.0.14"
+  }
+}

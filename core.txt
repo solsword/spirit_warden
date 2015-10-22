@@ -1,0 +1,74 @@
+
+Math rules:
+
+When division is surrounded by '^' symbols (e.g., ^x/5^), the result is rounded
+up to the nearest integer. In all other cases, results of division are rounded
+down to the nearest integer.
+
+When multiple changes apply to a value, flat changes are applied first, then
+all percentage changes are summed together to get a single number, and that
+final percentage change is applied. So for example,
+
+  1 + 3 + 70% - 20%
+
+works out to
+
+  4 + 50% = 6
+
+Turn structure:
+
+Each turn during phase 1, the combatants must spend (or waste) a minimum number
+of action points based on their speeds. Once they have made a decision, their
+moves are revealed and play advances to phase 2, where each contestant may
+spend the rest of their 100 action points for the turn. When all actions are
+locked in, effects from both phases 1 and 2 happen simultaneously, although
+some abilities may work differently when selected during phase 1 vs. phase 2.
+There's also a separate limit of one Defense, one Offense, and one Stance
+action per turn.
+
+Defenses can boost the Evasion, Block, and Resist stats, as well as Endurance.
+
+Normal attacks have Finesse and Impact values, while invocations attacks have a
+Potency value.
+
+For normal attacks, subtract the defender's Evasion from the attack's Finesse,
+and the defender's Block from the attack's Impact. Take the smaller of the two
+values and add 1/2 the larger to determine the attack's Hit Strength. So for
+example:
+
+Attack - 150 Finesse / 100 Impact
+Defender - 140 Evasion / 100 Block
+
+  150 - 140 = 10
+  100 - 100 = 0
+    0 + 1/2 * 10 => 5
+
+Attack - 150 Finesse / 100 Impact
+Defender - 100 Evasion / 140 Block
+
+  150 - 100 = 50
+  100 - 140 = -40
+    -40 + 1/2 * 50 => -15 (attack is blocked)
+
+In general, it's better to Block high-Finesse low-Impact attacks and Evade
+low-Finesse high-Impact attacks.
+
+Depending on the math, an attack can fall into several different categories:
+
+ Total:    Finesse - Evasion:    Impact - Block:   Category:
+
+ <= 0              <0                 <0            Miss
+ <= 0              <0                 >0            Miss
+ <= 0              <0                 >0            Block
+  > 0              <0                 >0            Glancing Hit
+  > 0              >0                 <0            Light Hit
+  > 0              >0                 >0            Strong Hit
+
+
+The target of an attack loses Fortitude equal to the Hit Strength of the
+attack, modified by Endurance: Fortitude lost = ^Hit Strength * (1 - Endurance)^
+
+Hit Strength - 20
+Endurance - 2%
+
+  Fortitude lost: 19

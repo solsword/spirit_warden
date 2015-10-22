@@ -1,0 +1,28 @@
+Ferocity   ---   Serenity
+Nobility   ---   Solidarity
+Fervor     ---   Guile
+
+
+150 form points
+200 skill points
+
+Impact  // Block
+Finesse // Evasion
+Potency // Resistance
+Initiative
+
+Endurance
+Essence
+
+100 action points
+
+              Impact| Block| Finesse| Evasion| Potency| Resistance| Initiative|
+                    |      |        |        |        |           |           |
+Ferocity   :: +1.3  |+1.2  | +1.1   | +1.1   |   +0.7 |    +0.7   |  +1.1     |
+Serenity   ::   +0.7|+1.1  | +1.1   | +1.1   | +1.2   |  +1.3     |    +0.7   |
+Nobility   ::  +1.0 |+1.1  | +1.1   |   +0.9 | +1.1   |    +0.9   |  +1.1     |
+Solidarity ::  +1.0 |+1.2  |   +0.9 |  +1.0  |  +1.0  |  +1.1     |   +1.0    |
+Fervor     :: +1.2  | +1.0 |   +0.8 |   +0.8 | +1.2   |  +1.1     |  +1.1     |
+Guile      ::   +0.7|  +0.7| +1.2   | +1.3   | +1.1   |   +1.0    |  +1.2     |
+
+

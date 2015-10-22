@@ -1,0 +1,257 @@
+Fire Elemental
+**************
+
+Conditions
+==========
+
+Burning
+-------
+##  During cleanup: Lose (@Burning@ * ^@Burning@/30^) essence
+ #.  No effect
+ #-  During cleanup: Lose (@Burning@/2) essence
+ #!  During cleanup: Lose (@Burning@ * ^@Burning@/20^) essence
+
+ *.  ~Fire~, ~Sun~, or ~Lightning~ primary
+ *-  ~Fire~, ~Sun~, or ~Lightning~ secondary, any ~Water~, ~Rock~, ~Soil~,
+     ~Gem~, or ~Warmth~
+ *!  Any ~Plant~, ~Shadow~, ~Cold~, ~The Corpse~, or ~Vampirism~
+
+##  During cleanup: -20% @Burning@
+ #-- During cleanup: -80% @Burning@
+ #-  During cleanup: -40% @Burning@
+ #!  During cleanup: -10% @Burning@
+ #!! During cleanup: -10% @Burning@ if @Burning@ > 70, else +10% @Burning@
+
+ *-- ~Water~ primary
+ *-  ~Water~ secondary, any ~Rock~, ~Soil~, ~Gem~, ~Fish~, or ~Cold~
+ #!  ~Plant~ secondary, any ~Bird~, ~Insect~, ~Shadow~, ~The Corpse~, or
+     ~Vampirism~
+ #!! ~Plant~ primary
+
+
+Form Abilities
+==============
+
+Blaze
+-----
+Cost: 30 FP
+Type: ~Fire~
+%%  +270 Essence
+%%  +12 Ferocity
+%%   +8 Solidarity
+%%  +10 Fervor
+##  Immune to essence loss from @Burning@
+##  +(@Burning@ / 10) Ferocity
+##  +(@Burning@ / 10) Fervor
+##  Inflict @Burning@ with an attack: self +15 @Burning@
+
+Pyre
+----
+Cost: 30 FP
+Type: ~Fire~
+%%  +270 Essence
+%%  +10 Serenity
+%%  +12 Nobility
+%%   +8 Fervor
+##  Immune to essence loss from @Burning@
+##  +(@Burning@ / 10) Serenity
+##  +(@Burning@ / 10) Nobility
+##  During setup: self +8 @Burning@
+
+Flame Body
+----------
+Cost: 30 FP
+Type: ~Fire~
+%%  +270 Essence
+%%   +8 Ferocity
+%%  +12 Solidarity
+%%  +10 Fervor
+##  Immune to essence loss from @Burning@
+##  *Weak hit* with *contact*: target +8 @Burning@
+##  *Strong hit* with *contact*: target +12 @Burning@
+##  Enemy *weak hit* with *contact*: attacker +8 @Burning@
+##  Enemy *strong hit* with *contact*: attacker +12 @Burning@
+
+Stubborn Flames
+---------------
+Cost: 30 FP
+Type: ~Fire~
+%%  +300 Essence
+%%   +8 Ferocity
+%%  +12 Solidarity
+%%  +10 Fervor
+##  Immune to essence loss from @Burning@
+##  +(@Burning@ / 10) - 2 Endurance
+
+Flame Essence
+-------------
+Cost: 30 FP
+Type: ~Fire~
+%%  +330 Essence
+%%  +10 Serenity
+%%  +10 Nobility
+%%   +8 Fervor
+##  Immune to essence loss from @Burning@
+##  Lose X Essence: +(X / 8) @Burning@
+##  During cleanup: gain (@Burning@ / 5) Essence
+
+Fire Mind
+---------
+Cost: 30 FP
+Type: ~Fire~
+%%  +270 Essence
+%%   +8 Serenity
+%%  +10 Nobility
+%%  +12 Guile
+##  Attack: +(self @Burning@ / 5) Finesse
+##  Attack: +(target @Burning@ / 5) Finesse
+##  Invocation: +(self @Burning@ / 5) Potency
+##  Invocation: +(target @Burning@ / 5) Potency
+
+Flickering Flames
+-----------------
+Cost: 10 FP
+Type: ~Fire~
+%%  +90 Essence
+%%  +7 Guile
+%%  +3 Nobility
+##  [Once per turn] Use a move that grants +Evasion: +10 Evasion
+##  +10 Finesse for ~Fire~ attacks
+
+Burning Will
+------------
+Cost: 10 FP
+Type: ~Fire~
+%%  +90 Essence
+%%  +4 Serenity
+%%  +6 Fervor
+##  [Once per turn] Use a move that grants +Resistance: +10 Resistance
+##  +10 Potency for ~Fire~ invocations
+
+Spreading Flames
+----------------
+Cost: 10 FP
+Type: ~Fire~
+%%  +90 Essence
+%%  +4 Nobility
+%%  +6 Fervor
+## *Weak hit* with an invocation: target +6 @Burning@
+## *Strong hit* with an invocation: target +9 @Burning@
+
+
+Defenses
+========
+
+Fire Shield
+-----------
+Cost: 3 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 30 AP
+%%  +2 Ferocity
+%%  +1 Fervor
+##  +(40 + 10% Ferocity + 10% Fervor) Block
+##  +10 Resist
+##  Enemy *weak hit* with *contact*: attacker +8 @Burning@
+##  Enemy *strong hit* with *contact*: attacker +12 @Burning@
+
+Wall of Flames
+--------------
+Cost: 3 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 30 AP
+%%  +1 Serenity
+%%  +2 Nobility
+##  +(30 + 10% Nobility) Block
+##  +(10 + 10% Serenity) Resist
+##  Enemy *weak hit* with *contact*: attacker +8 @Burning@
+##  Enemy *strong hit* with *contact*: attacker +12 @Burning@
+
+Shifting Flames
+---------------
+Cost: 3 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 30 AP
+%%  +1 Nobility
+%%  +2 Guile
+##  +(30 + 10% Guile + 10% Nobility) Evade
+##  Enemy *miss*: attacker + 9 @Burning@
+##  Enemy *glancing hit*: attacker +6 @Burning@
+
+Will of Fire
+------------
+Cost: 3 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 30 AP
+%%  +1 Serenity
+%%  +2 Nobility
+##  +(40 + 10% Serenity + 10% Nobility) Resist
+
+Attacks
+=======
+
+Fire Slam
+---------
+Cost: 4 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 50 AP
+%%  +4 Ferocity
+##  Attack (contact) {50 + 50% Ferocity}
+##  *Weak hit*: target +10 @Burning@
+##  *Strong hit*: target +15 @Burning@
+
+Flame Darts
+-----------
+Cost: 4 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 50 AP
+%%  +4 Nobility
+##  Attack x3 {30 + 40% Nobility}
+##  *Weak hit*: target +5 @Burning@
+##  *Strong hit*: target +8 @Burning@
+
+Invocations
+===========
+
+Overheat
+--------
+Cost: 2 SP
+Type: ~Fire~
+Requires: -Blaze-, any ~Fire~
+Use: 10 AP, 30 @Burning@
+%%  +2 Ferocity
+##  [2 turns] +15 Ferocity
+
+Burn Bright
+-----------
+Cost: 2 SP
+Type: ~Fire~
+Requires: -Pyre-, any ~Fire~
+Use: 10 AP, 30 @Burning@
+%%  +2 Nobility
+##  [2 turns] +15 Nobility
+
+Smoulder
+--------
+Cost: 2 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 10 AP
+%%  +2 Serenity
+##  +8 @Burning@
+##  @Burning@ < 30: [2 turns] +10 Serenity
+
+Kindle
+------
+Cost: 2 SP
+Type: ~Fire~
+Requires: any ~Fire~
+Use: 10 AP
+%%  +2 Fervor
+##  +4 @Burning@
+##  [2 turns] +5 Fervor
